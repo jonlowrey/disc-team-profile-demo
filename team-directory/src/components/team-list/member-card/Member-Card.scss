@@ -1,0 +1,11 @@
+.card{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    .name{
+        font-weight: bold;
+    }
+    .team{
+        color: red($color: #000000);
+    }
+}
