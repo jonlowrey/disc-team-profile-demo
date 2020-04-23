@@ -15,19 +15,6 @@ fdescribe('Member Card Component', () => {
         compiled = render(<MemberCard member={displayContent[0]}/>).container;
     });
 
-    it('should display members name', () =>{
-        const name = compiled.querySelector('.card .name');
-        expect(name.textContent).toContain('Jon');
-    });
+    // expect(img).toHaveProperty('src', displayContent[0].imgUrl);
 
-    it('should display team name', () => {
-        const teamName = compiled.querySelector('.card .team');
-        expect(teamName.textContent).toContain('Sentinel');
-    });
-
-    it('should display members profile image', () => {
-        const img = compiled.querySelector('.card .picture img');
-        expect(img).toBeTruthy();
-        expect(img).toHaveProperty('src', displayContent[0].imgUrl);
-    });
 });
