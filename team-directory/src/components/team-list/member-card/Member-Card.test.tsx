@@ -4,7 +4,7 @@ import {MemberCard} from './Member-Card';
 
 
 
-fdescribe('Member Card Component', () => {
+describe('Member Card Component', () => {
 
     const  displayContent = [
         { name: 'Jon Lowrey', team: 'Sentinel', imgUrl: "https://jonlowrey.com/Me.jpg" }, 
@@ -13,6 +13,10 @@ fdescribe('Member Card Component', () => {
     let compiled: any;
     beforeEach(() => {
         compiled = render(<MemberCard member={displayContent[0]}/>).container;
+    });
+
+    it('should render', () => {
+        expect(compiled).toBeTruthy();
     });
 
     // expect(img).toHaveProperty('src', displayContent[0].imgUrl);
