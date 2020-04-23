@@ -3,7 +3,7 @@ import { render, fireEvent, getByLabelText } from '@testing-library/react';
 import TeamList from './Team-List';
 import ReactTestUtils from 'react-dom/test-utils'; 
 
-describe('TeamList', () => {
+xdescribe('TeamList', () => {
 
     it('Displays the team roster header', () => {
         const { container } = render(<TeamList />);
