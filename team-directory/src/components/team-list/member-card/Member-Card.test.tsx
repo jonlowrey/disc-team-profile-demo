@@ -7,15 +7,7 @@ import {MemberCard} from './Member-Card';
 fdescribe('Member Card Component', () => {
 
     const  displayContent = [
-        { name: 'Jon Lowrey', team: 'Sentinel' }, 
-        { name: 'Suketu Bhuta', team: 'Sentinel' }, 
-        { name: 'Henrietta Loffe', team: 'Sentinel' }, 
-        { name: 'Sasanka Chittajallu', team: 'Sentinel' }, 
-        { name: 'Bill Dominguez', team: 'Sentinel' }, 
-        { name: 'Matt Lazar', team: 'Sentinel' }, 
-        { name: 'Andrew Bradley', team: 'Sentinel' }, 
-
-        { name: 'Tom Piczak', team: 'Guardian' }
+        { name: 'Jon Lowrey', team: 'Sentinel', imgUrl: "https://jonlowrey.com/Me.jpg" }, 
     ];
 
     let compiled: any;
@@ -28,8 +20,14 @@ fdescribe('Member Card Component', () => {
         expect(name.textContent).toContain('Jon');
     });
 
+    it('should display team name', () => {
+        const teamName = compiled.querySelector('.card .team');
+        expect(teamName.textContent).toContain('Sentinel');
+    });
+
     it('should display members profile image', () => {
         const img = compiled.querySelector('.card .picture img');
         expect(img).toBeTruthy();
-    })
+        expect(img).toHaveProperty('src', displayContent[0].imgUrl);
+    });
 });

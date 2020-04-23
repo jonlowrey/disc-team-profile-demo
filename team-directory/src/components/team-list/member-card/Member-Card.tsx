@@ -5,7 +5,7 @@ export function MemberCard(props: any) {
     return (
         <div className="card">
             <div className="picture">
-                <img src="https://raw.githubusercontent.com/gramener/comicgen/master/svg/humaaans/head/front/rad.svg" alt="Jon"/>
+                <img src={props.member.imgUrl} alt="Jon"/>
             </div>
             <div className="name">
                 Name: {props.member.name}

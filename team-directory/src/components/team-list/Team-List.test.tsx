@@ -16,28 +16,6 @@ xdescribe('TeamList', () => {
         const members = container.querySelectorAll('.member');
         expect(members.length).toBe(2);
 
-    });
-
-    // it('Displays all the calculator Buttons', () => {
-    //     const { container } = render(<TeamList />);
-    //     const buttons = container.querySelectorAll('.buttonContainer button');
-    //     expect(buttons.length).toBe(10);
-    //     buttons.forEach((button, index) => { expect(button.textContent).toContain(index) })
-    // });
-
-    // it('Should display number field', () => {
-    //     const { container } = render(<TeamList />);
-    //     const displayField = container.querySelector('.displayField');
-    //     expect(displayField).toBeTruthy();
-    // });
-
-    // fit('Should display number after it is clicked', () => {
-    //     const { container } = render(<TeamList />);
-    //     const displayField = container.querySelector('.displayField');
-    //     const buttonOne = container.querySelector('#one');
-    //     //buttonOne?.dispatchEvent(new Event('click');
-    //     ReactTestUtils.Simulate.click(buttonOne);
-    //     expect(displayField?.textContent).toBe('1');
-    // });
+    });q
 
 });

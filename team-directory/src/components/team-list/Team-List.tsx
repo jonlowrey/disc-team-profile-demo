@@ -3,16 +3,18 @@ import { MemberCard } from './member-card/Member-Card';
 
 class TeamList extends React.Component {
 
-    private displayContent = [
-        { name: 'Jon Lowrey', team: 'Sentinel' }, 
-        { name: 'Suketu Bhuta', team: 'Sentinel' }, 
-        { name: 'Henrietta Loffe', team: 'Sentinel' }, 
-        { name: 'Sasanka Chittajallu', team: 'Sentinel' }, 
-        { name: 'Bill Dominguez', team: 'Sentinel' }, 
-        { name: 'Matt Lazar', team: 'Sentinel' }, 
-        { name: 'Andrew Bradley', team: 'Sentinel' }, 
+    private imageUrl = 'https://raw.githubusercontent.com/gramener/comicgen/master/svg/humaaans/head/front/rad.svg';
 
-        { name: 'Tom Piczak', team: 'Guardian' }
+    private displayContent = [
+        { name: 'Jon Lowrey', team: 'Sentinel', imgUrl: this.imageUrl },
+        { name: 'Tom Piczak', team: 'Guardian', imgUrl: this.imageUrl },
+ 
+        // { name: 'Suketu Bhuta', team: 'Sentinel', imgUrl: this.imageUrl }, 
+        // { name: 'Henrietta Loffe', team: 'Sentinel' }, 
+        // { name: 'Sasanka Chittajallu', team: 'Sentinel' }, 
+        // { name: 'Bill Dominguez', team: 'Sentinel' }, 
+        // { name: 'Matt Lazar', team: 'Sentinel' }, 
+        // { name: 'Andrew Bradley', team: 'Sentinel' }, 
     ];
 
     public updateDisplay = (value: any) => {
